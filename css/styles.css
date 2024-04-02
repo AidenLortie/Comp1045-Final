@@ -201,3 +201,14 @@ h3 {
     background: linear-gradient(66deg, var(--secondary) 13.47%, var(--accent) 13.48%, var(--secondary) 86.68%, var(--accent) 86.69%);
 }
 
+
+/*Contact Page*/
+#ContactPageMain{
+    margin-top: 10px;
+}
+
+#contactInfo > p > a{
+    text-decoration: none;
+    color: var(--text);
+}
+
