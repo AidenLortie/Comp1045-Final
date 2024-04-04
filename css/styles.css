@@ -197,9 +197,38 @@ h3 {
 }
 
 /* About Page */
-#aboutMasthead {
-    background: linear-gradient(66deg, var(--secondary) 13.47%, var(--accent) 13.48%, var(--secondary) 86.68%, var(--accent) 86.69%);
+#videoMasthead {
+height: calc(100vh - 60px);
 }
+
+#videoMasthead video{
+    width: calc(100vw - 35px);
+    height: calc(100vh - 100px);
+    object-fit: cover;
+    margin: 10px;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.mastheadHeader{
+    display:flex;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    height: calc(100vh - 100px);
+    width: calc(100vw - 35px);
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px) brightness(20%);
+    border-radius: 4px;
+}
+#aboutMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 /*Contact Page*/
@@ -213,13 +242,14 @@ h3 {
 }
 #contactForm{
     width: 40vw;
+    margin-right: 10vw;
 }
 
 #contactForm form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;;
 }
 
 #contactForm input, #contactForm textarea{
@@ -229,8 +259,9 @@ h3 {
 #contactForm form input, #contactForm textarea, #contactForm button {
     border-radius: 4px;
     margin: 4px;
-    background: color-mix(in srgb, var(--background) 20%, var(--secondary));
+    background: color-mix(in srgb, var(--background) 80%, var(--primary));
     border-color: rgba(0, 0, 0, 0);
-    color: var(--text)
+    color: var(--text);
+    height: 200%;
 }
 
