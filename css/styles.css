@@ -6,6 +6,12 @@
     --accent: #4148e8;
     /* Monochrome palette generated with the help of https://www.realtimecolors.com/ */
 
+    /*
+    Throughout the code you may notice colors not up here that are followed by color-mix.
+    this is due to color-mix() causing errors in the validator, assumingly due to it not having been adopted by all
+    browsers until may 2023. as such they have been replaced by a static color obtian using
+    https://colordesigner.io/color-mixer
+     */
 
     scroll-behavior: smooth;
     scrollbar-width: thin;
@@ -28,6 +34,11 @@ header{
     background-color: var(--secondary);
     align-items: center;
     align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
 }
 
 h1 {
@@ -119,7 +130,7 @@ label li {
     align-items: center;
 }
 label li:hover{
-    background: color-mix(in srgb, var(--background) 5%, var(--text));
+    background: #d5d6ea /* color-mix(in srgb, var(--background) 5%, var(--text)) */;
 }
 label a{
     display: inline-block;
@@ -133,7 +144,7 @@ label menu{
 }
 
 main {
-    background: color-mix(in srgb, var(--background) 90%, var(--text));
+    background: #1a1b27 /* color-mix(in srgb, var(--background) 90%, var(--text)) */;
     width: 80%;
     margin: 10px auto;
     padding: 10px;
@@ -159,7 +170,7 @@ main {
     transition: .25s ease-in-out;
 }
 .callToAction a:hover{
-    background-color: color-mix(in srgb, var(--primary) 50%, var(--background));
+    background-color: #4d4f7c /* color-mix(in srgb, var(--primary) 50%, var(--background)) */;
     color: var(--text);
     font-weight: bold;
 }
@@ -195,8 +206,8 @@ h3 {
     transition: .25s ease-in-out;
 }
 .about a:hover {
-    background: color-mix(in srgb, #ffffff 20%, var(--accent));
-    color: color-mix(in srgb, #000000 80%, var(--text));
+    background: #d9dbfa /* color-mix(in srgb, #ffffff 20%, var(--accent)) */;
+    color: #4a3438 /* color-mix(in srgb, #000000 80%, var(--text)) */;
 }
 
 /* About Page */
@@ -265,7 +276,7 @@ textarea {
 #contactForm form input, #contactForm textarea, #contactForm button {
     border-radius: 4px;
     margin: 4px;
-    background: color-mix(in srgb, var(--background) 80%, var(--primary));
+    background: #21233b /* color-mix(in srgb, var(--background) 80%, var(--primary)) */;
     border-color: rgba(0, 0, 0, 0);
     color: var(--text);
     height: 200%;
@@ -305,7 +316,7 @@ table{
 
 .serviceLeft{
     width: 20vw;
-    background: color-mix(in srgb, var(--background) 80%, var(--primary));
+    background: #21233b /* color-mix(in srgb, var(--background) 80%, var(--primary)) */;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     padding:20px;
@@ -321,7 +332,7 @@ table{
 
 .serviceRight{
     width: 40vw;
-    background: color-mix(in srgb, var(--background) 70%, var(--secondary));
+    background: #303151 /* color-mix(in srgb, var(--background) 70%, var(--secondary)) */;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     padding: 20px;
@@ -334,7 +345,7 @@ footer {
     height: 60px;
     display: flex;
     padding: 10px 0 10px;
-    background-color: color-mix(in srgb,var(--secondary) 10%, var(--background));
+    background-color: #06071d /* color-mix(in srgb,var(--secondary) 10%, var(--background)) */;
     align-items: center;
     justify-content: center;
 }
